@@ -17,19 +17,17 @@ import 'swiper/css/pagination';
 const data = [
   {
     avatar: avatar1,
-    name: 'Adebayo Peace',
-    review: "Working with Ridwan was an absolute pleasure. He transformed our vision for a hair service landing page into a stunning reality. The attention to detail and the ability to create a responsive and visually appealing user interface is truly commendable. Ridwan not only delivered a beautifully designed landing page but also ensured that it functions flawlessly on all devices. Our clients love the seamless experience they now have when browsing our services and booking appointments. Ridwan has an incredible talent for understanding client needs and translating them into a user-friendly and eye-catching design. We couldn't be happier with the results and highly recommend Ridwan for anyone seeking a skilled and creative frontend developer.",
+    name: 'Taofeeq Otu',
+    role:'Backend developer',
+    review: <><p>Collaborating with Abiodun on recent projects was an enriching experience. I am compelled to express my utmost admiration for her skills and unwavering commitment to success. Hafsoh is not just a talented frontend developer; she is a master in her craft. Her proficiency in translating complex design concepts into elegant, functional user interfaces, coupled with her expertise in seamlessly integrating these interfaces with backend APIs, results in an impressive and harmonious final product.</p> <p>One of Hafsoh&apos;s standout qualities is her mastery of time management. She consistently adheres to the timelines established during our daily standup scrums, showcasing exemplary organizational skills that keep the entire team on track and ensure precise meeting of project milestones.</p><p>Beyond her technical prowess, Hafsoh is an absolute joy to work with. Her positive attitude and infectious enthusiasm make every collaboration not only highly productive but also thoroughly enjoyable. Ultimately, I&apos;ll definitely recommend Hafsoh for her expertise, unwavering commitment to project success, and her ability to foster a collaborative and enjoyable work environment. It has been a pleasure to witness her contributions elevate our project, and I am confident that she will continue to make significant impacts in any endeavor she undertakes.</p></>,
   },
   {
     avatar: avatar2,
-    name: 'Dare Seyi',
-    review: "Words cannot express how delighted we are with the system developed by Ridwan. This innovative solution has completely transformed the way we operate our printing shop. No more queues, no more unnecessary waiting, and no more limitations - it's a game-changer!. Ridwan has truly outdone himself by creating a seamless, user-friendly system that enables our customers to send their documents for printing, track their order's status, and schedule convenient pick-up times. This has not only enhanced our efficiency but also significantly improved our customer satisfaction. The beautiful and responsive design of the system showcases Ridwan's exceptional skills as a frontend developer. The dedication to understanding our needs and crafting a solution that perfectly fits our requirements is beyond impressive. We couldn't have asked for a better partner in this endeavor. We highly recommend Ridwan to anyone seeking a professional who can deliver both functionality and aesthetics in one package. Ridwan has set a new standard for excellence",
+    name: 'Adebusola Adeyeye',
+    role:'Backend Developer',
+    review: "Hafsah is a great team player. She is not just a good frontend developer, her attention to details and her keen to make a system work as it should work is top-notch",
   },
-  {
-    avatar: avatar3,
-    name: 'Badmus Khadijah',
-    review: "It is with great pleasure that I share my experience working with Ridwan and his team on the development of our remarkable Event Vendor Platform. Our mission was to create a platform that would simplify the process of connecting event vendors with potential customers, and Ridwan played a pivotal role in bringing this vision to life. With his expertise as a frontend developer, he helped craft an intuitive and visually appealing user interface that has proven to be pivotal for our business. The responsiveness and functionality of the platform have exceeded our expectations, making it incredibly easy for event vendors to register their businesses and for clients to find and connect with the services they need. It has revolutionized the event planning industry and simplified the process for all parties involved.Ridwan's contribution to this project has been invaluable. He are a true professional, a talented developer, and a pleasure to work with. I would highly recommend Ridwan for anyone seeking to elevate their digital presence and create a user-friendly platform that leaves a lasting impression.",
-  },
+ 
 ]
 
 const Testimonial = () => {
@@ -69,14 +67,13 @@ const Testimonial = () => {
         >
           
           {
-            data.map(({avatar, name, review}, index) => {
+            data.map(({avatar, name, review,role}, index) => {
               return (
               <SwiperSlide key={index} className="testimonial">
-                <div className="client-avatar">
-                  <img src='' alt="avatar" />
-                </div>
+               
 
-                <h5>{name}</h5>
+                <h5  style={{color:'white'}}>{name},</h5>
+                <h5 style={{color:'white'}}>{role}</h5>
                 <small className='client-review'>{review}</small>
               </SwiperSlide>
               )
