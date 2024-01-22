@@ -56,6 +56,16 @@ export const project = [
     collaboration: "Featured Project",
   },
  {
+    id:9,
+    imageSrc: portfoliox,
+    hostedLink:'https://www.greenbuildersltd.com/',
+    title:'Green Builders Limited',
+    description:'A real estate construction and development website.',
+    tools:['React', 'Typescript', 'Styled components'],
+    repo:'https://www.greenbuildersltd.com/',
+    collaboration:'Personal Project'
+  },
+ {
     id:7,
     imageSrc: portfoliox,
     hostedLink:'https://portfolio-x-rho.vercel.app/dashboard',
