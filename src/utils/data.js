@@ -39,7 +39,7 @@ export const project = [
     imageSrc: sdash,
     hostedLink:'https://sdash-ebon.vercel.app/',
     title:'Smart Transanctions',
-    description:'Smart Transanctions is a transaction dashboard that is responsive for all screen types.Internationalization features also included.',
+    description:'A dashboard for smart transanctions with iternationalization features also included.',
     tools:['Typescript','Next', 'Tailwind'],
     repo:' https://github.com/abiodunbusari/sdash.git',
     collaboration:'Personal Project'
