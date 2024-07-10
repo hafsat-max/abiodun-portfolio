@@ -26,7 +26,7 @@ const Portfolio = () => {
           visible: { opacity: 1, y: 0 },
         }}
       >
-        <h5>My Recent Work</h5>
+        <h5 className='my-0'>My Recent Work</h5>
         <h2>Projects</h2>
       </motion.div>
 
@@ -41,12 +41,15 @@ const Portfolio = () => {
             project.map(({imageSrc,id, title, github,hostedLink, description}) => {
               return (
                   <motion.div key={id}>
-                    <article className="portfolio-item">
+                    <article className="portfolio-item flex flex-col gap-3">
                       <div className="portfolio-item-image">
                         <img src={imageSrc} alt="blog-project" />
                       </div>
-                      <h3>{title}</h3>
-                      <p style={{height: '7rem'}}>{description}</p>
+                      <div className='flex flex-col gap-4 flex-1'>
+                      <h3 className='font-extrabold'>{title}</h3>
+                      <p >  {description}</p>
+                      </div>
+
                       <div className="portfolio-item-cta">
                         <a href={github} className='btn'>Github</a>
                         <a href={hostedLink} className='btn btn-primary' target='_blank' rel="noreferrer" >Live Demo</a>
